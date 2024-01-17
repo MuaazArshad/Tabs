@@ -18,7 +18,7 @@ body {
 	justify-content: flex-start;
 	width: 100vw;
 	height: 100vh;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 .title {
@@ -50,7 +50,7 @@ p {
 
 img {
 	width: 500px;
-	height: 400px;
+	height: 100%;
 	object-fit: cover;
 	border-radius: 5px;
 }
@@ -65,6 +65,7 @@ img {
 	font-size: 25px;
 	cursor: pointer;
 	letter-spacing: 3px;
+	text-transform: capitalize;
 	color: var(--primary-color);
 	background-color: #dae2ec;
 	padding: 20px 0;
@@ -113,22 +114,19 @@ ul {
 @media screen and (max-width: 1200px) {
 	.container {
 		flex-direction: column;
+		width: 100vw;
 	}
 	img {
-		width: 800px;
-		height: 500px;
+		width: 90%;
+		height: 70%;
 		object-fit: cover;
 	}
 }
 
 @media screen and (max-width: 900px) {
-	/* .container {
-		flex-direction: column;
-	} */
-
 	img {
 		width: 90%;
-		height: 50%;
+		height: 70%;
 		object-fit: cover;
 	}
 
